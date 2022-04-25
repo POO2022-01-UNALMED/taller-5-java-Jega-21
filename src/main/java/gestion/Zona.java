@@ -45,7 +45,7 @@ public class Zona {
 	
 	// Metodos.
 	public void agregarAnimales(Animal animal) {
-		tjis.animales.add(animal);
+		this.animales.add(animal);
 	}
 	
 	public int cantidadAnimales() {
