@@ -53,6 +53,10 @@ public class Pez extends Animal {
 	}
 	
 	// Constructor.
+	public Pez() {
+		this("", 0, "", "", "", 0);
+	}
+	
 	public 	Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 		this.setNombre(nombre);
 		this.setEdad(edad);

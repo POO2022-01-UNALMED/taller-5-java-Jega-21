@@ -53,6 +53,10 @@ public class Anfibio extends Animal {
 	}
 	
 	// Constructor.
+	public Anfibio() {
+		this("", 0, "", "", "", false);
+	}
+	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
 		this.setNombre(nombre);
 		this.setEdad(edad);

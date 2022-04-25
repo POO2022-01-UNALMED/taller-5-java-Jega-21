@@ -35,6 +35,10 @@ public class Zoologico {
 	}
 	
 	// Constructor.
+	public Zoologico() {
+		this(null, null);
+	}
+	
 	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;

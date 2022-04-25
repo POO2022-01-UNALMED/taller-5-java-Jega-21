@@ -53,6 +53,10 @@ public class Reptil extends Animal {
 	}
 	
 	// Constructor.
+	public Reptil() {
+		this("", 0, "", "", "", 0);
+	}
+	
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
