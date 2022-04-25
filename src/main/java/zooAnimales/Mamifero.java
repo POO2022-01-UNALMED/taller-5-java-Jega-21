@@ -13,14 +13,11 @@ public class Mamifero extends Animal {
 	
 	// Constructor.
 		public Mamifero() {
-			this("", 0, "", "", false, 0);
+			super();
+			Mamifero.listado.add(this);
 		}
-		
 		public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
-			this.setNombre(nombre);
-			this.setEdad(edad);
-			this.setHabitat(habitat);
-			this.setGenero(genero);
+			super(nombre, edad, habitat, genero);
 			this.pelaje = pelaje;
 			this.patas = patas;
 			Mamifero.listado.add(this);
@@ -69,7 +66,7 @@ public class Mamifero extends Animal {
 	
 	// Métodos.
 	public int cantidadMamiferos() {
-		return Mamifero.listado.size();
+		return listado.size();
 	}
 	
 	public static Mamifero crearCaballo(String nombre, int edad, String genero) {

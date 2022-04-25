@@ -12,14 +12,11 @@ public class Ave extends Animal {
 	
 	// Constructor.
 		public Ave() {
-			this("", 0, "", "", "");
+			super();
+			Ave.listado.add(this);
 		}
-		
 		public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-			this.setNombre(nombre);
-			this.setEdad(edad);
-			this.setHabitat(habitat);
-			this.setGenero(genero);
+			super(nombre, edad, habitat, genero);
 			this.colorPlumas = colorPlumas;
 			Ave.listado.add(this);
 		}
