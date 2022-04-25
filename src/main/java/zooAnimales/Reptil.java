@@ -80,7 +80,7 @@ public class Reptil extends Animal {
 		return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 	}
 	
-	public static Reptil crearSerpientes(String nombre, int edad, String genero) {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		Reptil.serpientes++;
 		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}
