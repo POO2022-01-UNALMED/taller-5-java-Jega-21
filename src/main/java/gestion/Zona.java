@@ -43,7 +43,7 @@ public class Zona {
 		this.animales = animales;
 	}
 	
-	// Métodos.
+	// Metodos.
 	public void agregarAnimales(Animal animal) {
 		animales.add(animal);
 	}

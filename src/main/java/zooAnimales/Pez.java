@@ -64,7 +64,7 @@ public class Pez extends Animal {
 		this.cantidadAletas = cantidadAletas;
 	}
 	
-	// Métodos.
+	// Metodos.
 	public int cantidadPeces() {
 		return Pez.listado.size();
 	}
