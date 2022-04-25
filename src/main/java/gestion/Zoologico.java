@@ -42,9 +42,9 @@ public class Zoologico {
 		this.zonas = zonas;
 	}
 	
-	// Metodos.
+	// Métodos.
 	public void agregarZonas(Zona zona) {
-		this.zonas.add(zona);
+		zonas.add(zona);
 	}
 	
 	public int cantidadTotalAnimales() {

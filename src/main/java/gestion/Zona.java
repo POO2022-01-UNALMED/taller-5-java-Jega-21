@@ -45,10 +45,10 @@ public class Zona {
 	
 	// Metodos.
 	public void agregarAnimales(Animal animal) {
-		animales.add(animal);
+		tjis.animales.add(animal);
 	}
 	
 	public int cantidadAnimales() {
-		return animales.size();
+		return this.animales.size();
 	}
 }
