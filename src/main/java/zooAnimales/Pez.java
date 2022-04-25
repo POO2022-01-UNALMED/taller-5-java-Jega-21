@@ -12,16 +12,16 @@ public class Pez extends Animal {
 	private int cantidadAletas;
 	
 	// Constructor.
-		public Pez() {
-			super();
-			Pez.listado.add(this);
-		}
-		public 	Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
-			super(nombre, edad, habitat, genero);
-			this.colorEscamas = colorEscamas;
-			this.cantidadAletas = cantidadAletas;
-			Pez.listado.add(this);
-		}
+	public Pez() {
+		super();
+		Pez.listado.add(this);
+	}
+	public 	Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
+		super(nombre, edad, habitat, genero);
+		this.colorEscamas = colorEscamas;
+		this.cantidadAletas = cantidadAletas;
+		Pez.listado.add(this);
+	}
 	
 	// Getters and Setters.
 	public static ArrayList<Pez> getListado() {
@@ -75,12 +75,12 @@ public class Pez extends Animal {
 	}
 	
 	public static Pez crearSalmon(String nombre, int edad, String genero) {
-		Pez.salmones += 1;
+		Pez.salmones++;
 		return new Pez(nombre, edad, "oceano", genero, "gris", 6);
 	}
 	
 	public static Pez crearBacalao(String nombre, int edad, String genero) {
-		Pez.bacalaos += 1;
+		Pez.bacalaos++;
 		return new Pez(nombre, edad, "oceano", genero, "gris", 6);
 	}	
 }

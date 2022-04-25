@@ -11,12 +11,12 @@ public class Zona {
 	private ArrayList<Animal> animales = new ArrayList<Animal>();
 	
 	// Constructor.
-		public Zona() {
-		}
-		public Zona(String nombre, Zoologico zoo) {
-			this.nombre = nombre;
-			this.zoo = zoo;
-		}
+	public Zona() {
+	}
+	public Zona(String nombre, Zoologico zoo) {
+		this.nombre = nombre;
+		this.zoo = zoo;
+	}
 	
 	// Getters and Setters.
 	public String getNombre() {

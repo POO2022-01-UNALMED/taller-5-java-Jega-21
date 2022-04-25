@@ -12,17 +12,16 @@ public class Anfibio extends Animal {
 	private boolean venenoso;
 	
 	// Constructor.
-		public Anfibio() {
-			super();
-			Anfibio.listado.add(this);
-		}
-		
-		public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
-			super(nombre, edad, habitat, genero);
-			this.colorPiel = colorPiel;
-			this.venenoso = venenoso;
-			Anfibio.listado.add(this);
-		}
+	public Anfibio() {
+		super();
+		Anfibio.listado.add(this);
+	}
+	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
+		super(nombre, edad, habitat, genero);
+		this.colorPiel = colorPiel;
+		this.venenoso = venenoso;
+		Anfibio.listado.add(this);
+	}
 	
 	// Getters and Setters.
 	public static ArrayList<Anfibio> getListado() {
@@ -76,12 +75,12 @@ public class Anfibio extends Animal {
 	}
 	
 	public static Anfibio crearRana(String nombre, int edad, String genero) {
-		Anfibio.ranas += 1;
+		Anfibio.ranas++;
 		return new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 	}
 	
 	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
-		Anfibio.salamandras += 1;
+		Anfibio.salamandras++;
 		return new Anfibio(nombre, edad, "selva", genero, "negro", true);
 	}
 }

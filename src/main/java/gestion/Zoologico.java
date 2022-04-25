@@ -10,12 +10,12 @@ public class Zoologico {
 	private static ArrayList<Zona> zonas = new ArrayList<Zona>() ;
 	
 	// Constructor.
-		public Zoologico() {
-		}
-		public Zoologico(String nombre, String ubicacion) {
-			this.nombre = nombre;
-			this.ubicacion = ubicacion;
-		}
+	public Zoologico() {
+	}
+	public Zoologico(String nombre, String ubicacion) {
+		this.nombre = nombre;
+		this.ubicacion = ubicacion;
+	}
 	
 	// Getters and Setters.
 	public String getNombre() {

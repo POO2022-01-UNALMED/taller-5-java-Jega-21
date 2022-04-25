@@ -11,15 +11,15 @@ public class Ave extends Animal {
 	private String colorPlumas;
 	
 	// Constructor.
-		public Ave() {
-			super();
-			Ave.listado.add(this);
-		}
-		public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-			super(nombre, edad, habitat, genero);
-			this.colorPlumas = colorPlumas;
-			Ave.listado.add(this);
-		}
+	public Ave() {
+		super();
+		Ave.listado.add(this);
+	}
+	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
+		super(nombre, edad, habitat, genero);
+		this.colorPlumas = colorPlumas;
+		Ave.listado.add(this);
+	}
 	
 	// Getters and Setters.
 	public static ArrayList<Ave> getListado() {
@@ -65,12 +65,12 @@ public class Ave extends Animal {
 	}
 	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
-		Ave.halcones += 1;
+		Ave.halcones++;
 		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
 	
 	public static Ave crearAguilas(String nombre, int edad, String genero) { 
-		Ave.aguilas += 1;
+		Ave.aguilas++;
 		return new Ave(nombre, edad, "montanas", genero, "blanco");
 	}
 }
