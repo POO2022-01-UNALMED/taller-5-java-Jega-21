@@ -88,11 +88,11 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		if(this.zona == null) {
-			return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero
-					+ ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo();
+		if(this.zona != null) {
+			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero
+					+ ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el " + this.zona.getZoo();
 		} else {
-			return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
+			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero;
 			}
 		}
 }
