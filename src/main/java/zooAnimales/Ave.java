@@ -68,14 +68,12 @@ public class Ave extends Animal {
 	}
 	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
-		Ave animal = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		Ave.halcones += 1;
-		return animal;
+		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
 	
-	public static Ave crearAguilas(String nombre, int edad, String genero) {
-		Ave animal = new Ave(nombre, edad, "montanas", genero, "blanco");
+	public static Ave crearAguilas(String nombre, int edad, String genero) { 
 		Ave.aguilas += 1;
-		return animal;
+		return new Ave(nombre, edad, "montanas", genero, "blanco");
 	}
 }
