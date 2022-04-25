@@ -36,7 +36,6 @@ public class Zoologico {
 	
 	// Constructor.
 	public Zoologico() {
-		this(null, null);
 	}
 	
 	public Zoologico(String nombre, String ubicacion) {
@@ -46,14 +45,14 @@ public class Zoologico {
 	
 	// Métodos.
 	public void agregarZonas(Zona zona) {
-		this.zonas.add(zona);
+		zonas.add(zona);
 	}
 	
 	public int cantidadTotalAnimales() {
-		int suma = 0;
-		for(int i = 0; i < this.zonas.size(); i++) {
-			suma += this.zonas.get(i).cantidadAnimales();
+		int sum = 0;
+		for(int i = 0; i < zonas.size(); i++) {
+			sum += zonas.get(i).cantidadAnimales();
 		}
-		return suma;
+		return sum;
 	}
 }

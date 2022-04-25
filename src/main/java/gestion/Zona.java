@@ -37,7 +37,6 @@ public class Zona {
 	
 	// Constructor.
 	public Zona() {
-		this(null, null);
 	}
 	
 	public Zona(String nombre, Zoologico zoo) {
@@ -47,10 +46,10 @@ public class Zona {
 	
 	// Métodos.
 	public void agregarAnimales(Animal animal) {
-		this.animales.add(animal);
+		animales.add(animal);
 	}
 	
 	public int cantidadAnimales() {
-		return this.animales.size();
+		return animales.size();
 	}
 }

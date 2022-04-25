@@ -63,15 +63,24 @@ public class Animal {
 	
 	// 	Constructor.
 	public Animal() {
-		this("", 0, "", "");
-		
+		totalAnimales += 1;
 	}
+	
+	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.habitat = habitat;
+		this.genero = genero;
+		this.zona = zona;
+		totalAnimales += 1; 
+	}
+	
 	public 	Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		Animal.totalAnimales += 1;
+		totalAnimales += 1;
 	}
 	
 	// Métodos.
@@ -89,12 +98,11 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		if(this.zona != null) {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es "
-					+ this.genero + ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el " + this.zona.getZoo();
+		if(zona != null) {
+			return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero
+					+ ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo();
 		} else {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es "
-					+ this.genero;
+			return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
 			}
 		}
 }
