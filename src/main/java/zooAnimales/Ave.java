@@ -10,6 +10,20 @@ public class Ave extends Animal {
 	public static int aguilas;
 	private String colorPlumas;
 	
+	// Constructor.
+		public Ave() {
+			this("", 0, "", "", "");
+		}
+		
+		public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
+			this.setNombre(nombre);
+			this.setEdad(edad);
+			this.setHabitat(habitat);
+			this.setGenero(genero);
+			this.colorPlumas = colorPlumas;
+			Ave.listado.add(this);
+		}
+	
 	// Getters and Setters.
 	public static ArrayList<Ave> getListado() {
 		return listado;
@@ -41,20 +55,6 @@ public class Ave extends Animal {
 	
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
-	}
-	
-	// Constructor.
-	public Ave() {
-		this("", 0, "", "", "");
-	}
-	
-	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
-		this.colorPlumas = colorPlumas;
-		Ave.listado.add(this);
 	}
 	
 	// Métodos.

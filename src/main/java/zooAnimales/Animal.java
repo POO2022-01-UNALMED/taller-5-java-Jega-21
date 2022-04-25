@@ -1,5 +1,6 @@
 package zooAnimales;
 import gestion.Zona;
+import java.util.ArrayList;
 
 // Clase.
 public class Animal {
@@ -11,6 +12,18 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
+	
+// 	Constructor.
+	public Animal() {
+		totalAnimales += 1;
+	}
+	public 	Animal(String nombre, int edad, String habitat, String genero) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.habitat = habitat;
+		this.genero = genero;
+		totalAnimales += 1;
+	}
 	
 	// Getters and Setters.
 	public static int getTotalAnimales() {
@@ -61,28 +74,6 @@ public class Animal {
 		this.zona = zona;
 	}
 	
-	// 	Constructor.
-	public Animal() {
-		totalAnimales += 1;
-	}
-	
-	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
-		this.nombre = nombre;
-		this.edad = edad;
-		this.habitat = habitat;
-		this.genero = genero;
-		this.zona = zona;
-		totalAnimales += 1; 
-	}
-	
-	public 	Animal(String nombre, int edad, String habitat, String genero) {
-		this.nombre = nombre;
-		this.edad = edad;
-		this.habitat = habitat;
-		this.genero = genero;
-		totalAnimales += 1;
-	}
-	
 	// Métodos.
 	public String movimiento() {
 		return "desplazarse";
@@ -98,7 +89,7 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		if(zona != null) {
+		if(this.zona == null) {
 			return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero
 					+ ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo();
 		} else {

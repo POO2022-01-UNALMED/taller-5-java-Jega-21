@@ -11,6 +11,21 @@ public class Reptil extends Animal {
 	private String colorEscamas;
 	private int largoCola;
 	
+	// Constructor.
+		public Reptil() {
+			this("", 0, "", "", "", 0);
+		}
+		
+		public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
+			this.setNombre(nombre);
+			this.setEdad(edad);
+			this.setHabitat(habitat);
+			this.setGenero(genero);
+			this.colorEscamas = colorEscamas;
+			this.largoCola = largoCola;
+			Reptil.listado.add(this);
+		}
+	
 	// Getters and Setters.
 	public static ArrayList<Reptil> getListado() {
 		return listado;
@@ -52,20 +67,6 @@ public class Reptil extends Animal {
 		this.largoCola = largoCola;
 	}
 	
-	// Constructor.
-	public Reptil() {
-		this("", 0, "", "", "", 0);
-	}
-	
-	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
-		this.colorEscamas = colorEscamas;
-		this.largoCola = largoCola;
-		Reptil.listado.add(this);
-	}
 	
 	// Métodos.
 	public int cantidadReptiles() {

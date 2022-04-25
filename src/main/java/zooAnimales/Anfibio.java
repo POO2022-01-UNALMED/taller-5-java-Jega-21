@@ -11,6 +11,21 @@ public class Anfibio extends Animal {
 	private String colorPiel;
 	private boolean venenoso;
 	
+	// Constructor.
+		public Anfibio() {
+			this("", 0, "", "", "", false);
+		}
+		
+		public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
+			this.setNombre(nombre);
+			this.setEdad(edad);
+			this.setHabitat(habitat);
+			this.setGenero(genero);
+			this.colorPiel = colorPiel;
+			this.venenoso = venenoso;
+			Anfibio.listado.add(this);
+		}
+	
 	// Getters and Setters.
 	public static ArrayList<Anfibio> getListado() {
 		return listado;
@@ -50,21 +65,6 @@ public class Anfibio extends Animal {
 	
 	public void setVenenoso(boolean venenoso) {
 		this.venenoso = venenoso;
-	}
-	
-	// Constructor.
-	public Anfibio() {
-		this("", 0, "", "", "", false);
-	}
-	
-	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
-		this.colorPiel = colorPiel;
-		this.venenoso = venenoso;
-		Anfibio.listado.add(this);
 	}
 	
 	// Métodos.

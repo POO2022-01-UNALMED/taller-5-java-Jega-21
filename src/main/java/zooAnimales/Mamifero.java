@@ -11,6 +11,21 @@ public class Mamifero extends Animal {
 	private boolean pelaje;
 	private int patas;
 	
+	// Constructor.
+		public Mamifero() {
+			this("", 0, "", "", false, 0);
+		}
+		
+		public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
+			this.setNombre(nombre);
+			this.setEdad(edad);
+			this.setHabitat(habitat);
+			this.setGenero(genero);
+			this.pelaje = pelaje;
+			this.patas = patas;
+			Mamifero.listado.add(this);
+		}
+		
 	// Getters and Setters.
 	public static ArrayList<Mamifero> getListado() {
 		return listado;
@@ -50,21 +65,6 @@ public class Mamifero extends Animal {
 	
 	public void setPatas(int patas) {
 		this.patas = patas;
-	}
-	
-	// Constructor.
-	public Mamifero() {
-		this("", 0, "", "", false, 0);
-	}
-	
-	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
-		this.pelaje = pelaje;
-		this.patas = patas;
-		Mamifero.listado.add(this);
 	}
 	
 	// Métodos.

@@ -11,6 +11,21 @@ public class Pez extends Animal {
 	private String colorEscamas;
 	private int cantidadAletas;
 	
+	// Constructor.
+		public Pez() {
+			this("", 0, "", "", "", 0);
+		}
+		
+		public 	Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
+			this.setNombre(nombre);
+			this.setEdad(edad);
+			this.setHabitat(habitat);
+			this.setGenero(genero);
+			this.colorEscamas = colorEscamas;
+			this.cantidadAletas = cantidadAletas;
+			Pez.listado.add(this);
+		}
+	
 	// Getters and Setters.
 	public static ArrayList<Pez> getListado() {
 		return listado;
@@ -50,21 +65,6 @@ public class Pez extends Animal {
 	
 	public void setCantidadAletas(int cantidadAletas) {
 		this.cantidadAletas = cantidadAletas;
-	}
-	
-	// Constructor.
-	public Pez() {
-		this("", 0, "", "", "", 0);
-	}
-	
-	public 	Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
-		this.colorEscamas = colorEscamas;
-		this.cantidadAletas = cantidadAletas;
-		Pez.listado.add(this);
 	}
 	
 	// Métodos.
