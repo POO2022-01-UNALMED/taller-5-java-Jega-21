@@ -49,6 +49,10 @@ public class Zona {
 	}
 	
 	public int cantidadAnimales() {
-		return this.animales.size();
+		int sum = 0;
+		for(int i = 0; i < this.animales.size(); i++) {
+			sum += 1;
+		}
+		return sum;
 	}
 }
